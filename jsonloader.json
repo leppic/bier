@@ -1,0 +1,53 @@
+function jsonLoader(nameSup){
+    var favSuper = ['aldi','jumbo','albert-heijn']
+    var nameBrand = ['Hertog Jan','Heineken','Jupiler']
+//    console.log(nameSup);
+    checkSupermarktJSON(favSuper);
+    checkSupermarktJSONbrand(nameBrand);
+}
+
+
+function checkSupermarktJSON(namesSup){
+    console.log('js loaded');
+    
+    $.each(namesSup, function( index, value ) {
+        console.log( index + ": " + value );
+        
+        var superData = $.getJSON( "http://www.chananippel.nl/cronjobs/bier/"+this+".json", function() {
+            console.log( "success" );
+        })
+        .done(function() {
+            console.log( superData.responseJSON[0].name );
+        })
+        .fail(function() {
+            console.log( "error" );
+        })
+        .always(function() {
+            console.log( "complete" );
+        });
+    });    
+}
+
+function checkSupermarktJSONbrand(nameBrand){
+    console.log('js loaded')
+    var superMarkets = $.getJSON("json/supermarkt.json", function(data) {
+        console.logsuperMarkets()
+    })
+    
+    $.each(namesSup, function( index, value ) {
+        console.log( index + ": " + value );
+        
+        var superData = $.getJSON( "http://www.chananippel.nl/cronjobs/bier/"+this+".json", function() {
+            console.log( "success" );
+        })
+        .done(function() {
+            console.log( superData.responseJSON[0].name );
+        })
+        .fail(function() {
+            console.log( "error" );
+        })
+        .always(function() {
+            console.log( "complete" );
+        });
+    });    
+}

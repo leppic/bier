@@ -1,0 +1,141 @@
+{"supermarkt":[
+        { "name": "agrimarkt",
+     "searchName1":"Agrimarkt",
+     "searchName2":"",
+     "searchName3":""
+    } , 
+    { "name": "albert-heijn",
+     "searchName1":"Albert Heijn",
+     "searchName2":"",
+     "searchName3":""
+    } , 
+    { "name": "aldi",
+     "searchName1":"ALDI",
+     "searchName2":"",
+     "searchName3":""
+    } , 
+    { "name": "attent",
+     "searchName1":"Attent",
+     "searchName2":"",
+     "searchName3":""
+    } , 
+    { "name": "boni",
+     "searchName1":"Boni",
+     "searchName2":"",
+     "searchName3":""
+    } , 
+    { "name": "coop",
+     "searchName1":"Coop",
+     "searchName2":"",
+     "searchName3":""
+    } , 
+    { "name": "coopcompact",
+     "searchName1":"CoopCompact",
+     "searchName2":"",
+     "searchName3":""
+    } , 
+    { "name": "deen",
+     "searchName1":"DEEN",
+     "searchName2":"",
+     "searchName3":""
+    } , 
+    { "name": "dekamarkt",
+     "searchName1":"DekaMarkt",
+     "searchName2":"",
+     "searchName3":""
+    } , 
+    { "name": "dirck-iii",
+     "searchName1":"Dirck",
+     "searchName2":"",
+     "searchName3":""
+    } , 
+    { "name": "dirk",
+     "searchName1":"Dirk",
+     "searchName2":"",
+     "searchName3":""
+    } , 
+    { "name": "emte",
+     "searchName1":"EMTÉ",
+     "searchName2":"",
+     "searchName3":""
+    } , 
+    { "name": "gall-en-gall",
+     "searchName1":"Gall",
+     "searchName2":"",
+     "searchName3":""
+    } , 
+    { "name": "hanos",
+     "searchName1":"HANOS",
+     "searchName2":"",
+     "searchName3":""
+    } , 
+    { "name": "hoogvliet",
+     "searchName1":"Hoogvliet",
+     "searchName2":"",
+     "searchName3":""
+    } , 
+    { "name": "jan-linders",
+     "searchName1":"Linders",
+     "searchName2":"",
+     "searchName3":""
+    } , 
+    { "name": "jumbo",
+     "searchName1":"Jumbo",
+     "searchName2":"",
+     "searchName3":""
+    } , 
+    { "name": "lidl",
+     "searchName1":"Lidl",
+     "searchName2":"",
+     "searchName3":""
+    } , { "name": "makro",
+     "searchName1":"Makro",
+     "searchName2":"",
+     "searchName3":""
+    } , 
+    { "name": "mcd",
+     "searchName1":"MCD",
+     "searchName2":"",
+     "searchName3":""
+    } , 
+    { "name": "mitra",
+     "searchName1":"Mitra",
+     "searchName2":"Mitra's",
+     "searchName3":""
+    } , 
+    { "name": "nettorama",
+     "searchName1":"Nettorama",
+     "searchName2":"",
+     "searchName3":""
+    } , 
+    { "name": "plus",
+     "searchName1":"PLUS",
+     "searchName2":"",
+     "searchName3":""
+    } , 
+    { "name": "poiesz",
+     "searchName1":"Poiesz",
+     "searchName2":"",
+     "searchName3":""
+    } , 
+    { "name": "sligro",
+     "searchName1":"Sligro",
+     "searchName2":"",
+     "searchName3":""
+    } , 
+    { "name": "spar",
+     "searchName1":"Spar",
+     "searchName2":"",
+     "searchName3":""
+    } , 
+    { "name": "troefmarkt",
+     "searchName1":"Troefmarkt",
+     "searchName2":"",
+     "searchName3":""
+    } , 
+    { "name": "vomar",
+     "searchName1":"Vomar",
+     "searchName2":"",
+     "searchName3":""
+    }
+]}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	
+    <title>Bier in de Aanbieding</title>
+	
+    <link rel="stylesheet" href="assets/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300' rel='stylesheet' type='text/css'>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+	<script src="js/jquery.ui.touch-punch.min.js"></script>
+	<script src="js/velocity.min.js"></script>
+    
+	<script src="jquery-cookie/jquery.cookie.js"></script>
+	<script src="EasyAutocomplete-1.3.5/jquery.easy-autocomplete.min.js"></script>
+    
+    <script src="app.js"></script>
+    <script src="jsonloader.js"></script>
+    <script src="placeData.js"></script>
+    <script src="zoeken.js"></script>
+    <script src="menu.js"></script>
+    
+<!--    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgbpi6HMalTBTfpWwDosVUuNzeOw5nAQo&libraries=places&callback=initMap" async defer></script>-->
+    
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    
+<!--    Indicate an image to display while the mobile web app is loading:-->
+    <link rel="apple-touch-startup-image" href="assets/icons/startup-image.png" />
+    <link rel="apple-touch-icon" href="assets/icons/icon.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/icons/icon-precomposed.png"/>
+</head>
+<body>
+    <div class="fader"></div>
+    <div class="menu">
+        <ul id="menuList">
+            <li id="homeBut">Bier in de aanbieding</li>
+            <li id="favSupBut">Favoriete supermarkten</li>
+        </ul>
+    </div>
+    
+    <div class="opt1" style="display:none;">
+        <header>
+            <h2 class="headerText">Favoriete supermarkten</h2>
+            <div class="optionsIcon">
+                <div class="optionCrcl"></div>
+                <div class="optionCrcl"></div>
+                <div class="optionCrcl"></div>
+            </div>
+        </header>
+        <div class="addItemName" style="display:none">
+            <input type="text" id="searchAddItem" placeholder="Zoek naar merk, supermarkt of soort" style="display:block;">
+        </div>
+        <div class="faderOpt1" style="display:none"></div>
+        <div class="container">
+            <ul id="opt1List">
+                <li class="ui-state-default" name="aldi">ALDI</li>
+                <li class="ui-state-default" name="jumbo">Jumbo</li>
+                <li class="ui-state-default" name="albert-heijn">Albert Heijn</li>
+                <li class="ui-state-default" name="plus">Plus</li>
+                <li class="addItem">+</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="mainBody" style="display:block;">
+        <header>
+            <h2 class="headerText">Bier in de aanbieding</h2>
+            <div class="optionsIcon">
+                <div class="optionCrcl"></div>
+                <div class="optionCrcl"></div>
+                <div class="optionCrcl"></div>
+            </div>
+        </header>
+        <div class="container">
+            <input type="text" id="searchHome" placeholder="Zoek naar merk, supermarkt of soort" style="display:block;">
+            <div id="clearSearch" style="display:none;">
+                <img src="assets/img/clearch.png" width="100%" height="100%">
+            </div> 
+            <h2 class="problem"></h2>
+            <div class="loading">
+                <img src="assets/img/bier-empty.png" id="emptyGlass"> 
+                <div class="loadingAnimation"> 
+                    <img src="assets/img/bier-full.png" id="fullGlass">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

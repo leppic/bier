@@ -1,0 +1,411 @@
+body {
+	font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(img/background2.png);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container {
+	width: 100vw;
+	height: auto;
+	background: #F6F7F8;
+    overflow: hidden;
+    background-image: url(img/background2.png);
+    background-attachment: fixed;
+    background-size: cover;
+    position: absolute;
+    top:66px;
+    min-height: calc(100vh - 66px);
+}
+.mainBody {
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+}
+.opt1 {
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+}
+.scaled {
+    transform: scale(0.8);
+}
+header {
+    width: 100vw;
+    height: 66px;
+    background-image: url(img/background2.png);
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 18 0;
+    color: white;
+    position: fixed;
+    z-index: 100;
+}
+header h2.headerText {
+    margin: 20px 0;
+    text-align: center;
+    font-weight: 100;
+}
+.optionsIcon {
+    position: absolute;
+    top: 0;
+    right: -20px;
+    padding: 22px 30px;
+}
+.optionCrcl {   
+    border-radius: 2px;
+    background-color: white;
+    width: 30px;
+    height: 2px;
+    margin-bottom: 10px;
+}
+.bierBand {
+    width: 100vw;
+    height: 168px;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    margin: 0 0 0px 8px;
+    padding: 0 0 8px 0px;
+    border-radius: 3px;
+}
+.item {
+    height: 168px;
+    width: 168px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(248,248,248,1);
+    position: absolute;
+    border-radius: 3px;
+/*    border: solid black 1px;*/
+    text-align: center;
+/*    padding-left: 2px;*/
+    -webkit-box-shadow: 1px 2px 10px 1px rgba(0,0,0,0.3);
+    -moz-box-shadow: 1px 2px 10px 1px rgba(0,0,0,0.3);
+    box-shadow: 1px 2px 10px 1px rgba(0,0,0,0.3);
+    color: #4f6168;
+}
+.item div.superLogo {
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    position: absolute;
+    top:4px;
+    left:4px;
+}
+.item img {
+    max-height: 44px;
+    margin: 10px auto -40px;
+}
+.item span.bierNaam {
+    font-size: 22px;
+    display: block;
+    margin-top: 45px;
+    white-space: nowrap;
+    height: 26px;
+}
+.item span.bierFormaat {
+    font-size: 16px;
+    display: block;
+/*    position: relative;*/
+    
+}
+.item span.oPrijs {
+    font-size: 12pt;
+    font-weight: 200;
+    text-decoration: line-through;
+    margin-right: 4px;
+/*    display: block;*/
+}
+.item span.nPrijs {
+    font-size: 14pt;
+/*    display: block;*/
+}
+.item span.datum {
+    font-size:  7.5pt;
+    display: block;
+    white-space: nowrap;
+}
+.item span.korting {
+    font-size: 9.5pt;
+    display: block;
+    white-space: nowrap;
+}
+.superMarkt {
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 2;
+    width: 90px;
+    border-radius: 3px;
+    background-size: cover;
+}
+.colorBand {
+    width: 20px;
+    height: 168px;
+    position: relative;
+    margin: -176px 0 8px 8px;
+    background-image: url() !important;
+    opacity: 0.6;
+}
+input#searchHome:focus {
+    outline: none;
+}
+input#searchHome {
+    width: 100%;
+    padding: 15px 4px 15px 20px;
+    box-sizing: border-box;
+    font-size: 14pt;
+    font-family: 'Ubuntu', sans-serif;
+    border: 0px solid #999;
+    border-radius: 3px;
+    -webkit-box-shadow: 1px 2px 10px 1px rgba(0,0,0,0.3);
+    -moz-box-shadow: 1px 2px 10px 1px rgba(0,0,0,0.3);
+    box-shadow: 1px 2px 10px 1px rgba(0,0,0,0.3);
+}
+.easy-autocomplete {
+/*    width: 344px !important;*/
+    width: calc(100vw - 16px) !important;
+    margin: 7px 8px;
+}
+.easy-autocomplete-container{
+    width: 344px;
+    box-sizing: border-box;
+    font-size: 16pt;
+    position: absolute;
+    top: 59px;
+    z-index: 99;
+    background-color: #F1F1F1;
+    border-top: 1px solid gray;
+    border-radius: 0px 0px 3px 3px;
+    box-shadow: 1px 2px 10px 1px rgba(0,0,0,0.3);
+}
+.easy-autocomplete-container ul{
+    width: 100%;
+    box-sizing: border-box;
+    list-style: none;
+    padding: 0px 0px;
+    display: none;
+    margin-top: 16px;
+}
+.easy-autocomplete-container ul li {
+    margin: 8px 18px;
+}
+#clearSearch{
+    margin: -59px 0px 8px 86vw;
+    width: 52px;
+    height: 52px;
+}
+.bierBandSearch {
+    width: 100vw;
+    height: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    margin-bottom: 20px;
+    background-image: url(img/clearch.png)
+    white-space: normal;
+}
+.itemSearch {
+    position:relative; 
+/*    width:168px;*/
+    width: calc(50vw - 12px);
+    height:168px;
+    margin: 0 8px 8px 8px;
+    overflow: hidden;
+}
+.itemSearch:nth-child(even){
+    margin-left: 0px;
+}
+.superBandResults {
+    background-image: url();
+    height: 30px;
+    text-align: center;
+    background-image: url(img/fadeOut.png)
+}
+::-webkit-scrollbar { 
+    display: none; 
+}
+.loading {
+    text-align: center;
+    position: absolute;
+    bottom: 130px;
+    width: 100vw;
+    right: 50px;
+    opacity: 0.8;
+}
+.loading img {
+    max-width: 110px;
+    position: absolute;
+    bottom: 0px;
+}
+div.loadingAnimation {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    bottom: 0px;
+}
+.problem {
+    padding: 25px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    color: #444F56;
+}
+.fader {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgb(51, 59, 66);
+    opacity: 0.7;
+    z-index: 105;
+}
+.menu {
+    position: fixed;
+    width: 70vw;
+    height: 100vh;
+    top: 0;
+    left:100vw;
+    z-index: 110;
+    background-color: #3bbedb;
+    color: white;
+}
+#menuList {
+    list-style: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 24px;
+    padding: 0px;
+    margin: 0px;
+}
+#menuList li {
+    height: 25vh;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 55px 20px;
+}
+li#homeBut {
+    background-color: #45d1a7;
+}
+li#favSupBut {
+    background-color: #42caba
+}
+li#but3 {
+    background-color: #3bbedb;
+}
+li#but4 {
+    background-color: #35aac4;
+}
+
+#opt1List{
+    list-style: none;
+    margin: 0px 8px;
+    padding: 0;
+}
+#opt1List li {
+    box-sizing: border-box;
+    margin: 0 0 8px 0;
+    padding: 15px;
+    height: 52px;
+    width: calc(100vw - 16px);
+    display: inline-block;
+    background-color: rgba(248,248,248,1);
+    border-radius: 26px  3px 3px 26px;
+    text-align: center;
+    -webkit-box-shadow: 1px 2px 10px 1px rgba(0,0,0,0.3);
+    -moz-box-shadow: 1px 2px 10px 1px rgba(0,0,0,0.3);
+    box-shadow: 1px 2px 10px 1px rgba(0,0,0,0.3);
+    color: #4f6168;
+}
+#opt1List li.addItem {
+    background-color: #28e4d3;
+    width: 54px;
+    margin-left: calc(100vw - 70px);
+    margin-top: 8px;
+    color: white;
+    font-size: 73px;
+    padding: 0px;
+    line-height: 0.6;
+    border-radius: 26px;
+}
+.faderOpt1 {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgb(51, 59, 66);
+    opacity: 0.7;
+    z-index: 100;
+}
+.addItemName {
+    position: absolute;
+    top: 92px;
+    z-index: 110;
+/*    width: calc(100vw - 16px);*/
+/*    margin: 0px 8px;*/
+}
+.handle {
+    float: left;
+    margin: -14px ;
+    color: slategray;
+    width: 50px;
+    height: 50px;
+    background-image: url(icons/handle.png);
+    background-size: cover;
+}
+.removeItem {
+    float: right;
+/*    padding: 10px 15px;*/
+    margin: -14px ;
+    color: slategray;
+    width: 50px;
+    height: 50px;
+    background-image: url(icons/remove.png);
+    background-size: cover;
+}
+input#searchAddItem {
+    width: 100%;
+    padding: 15px 4px 15px 20px;
+    box-sizing: border-box;
+    font-size: 14pt;
+    font-family: 'Ubuntu', sans-serif;
+    border: 0px solid #999;
+    border-radius: 3px;
+    -webkit-box-shadow: 1px 2px 10px 1px rgba(0,0,0,0.3);
+    -moz-box-shadow: 1px 2px 10px 1px rgba(0,0,0,0.3);
+    box-shadow: 1px 2px 10px 1px rgba(0,0,0,0.3);
+}
+
+.agrimarkt{ background-color: #f78e1e; background-image: url(img/agrimarkt.png); }
+.albert-heijn {background-color: #00A0E2; background-image: url(img/albert-heijn.png);}
+.aldi{ background-color: #1055a0; background-image: url(img/aldi.png); }
+.attent{ background-color: #90be45; background-image: url(img/attent.png); }
+.boni{ background-color: #e21e28; background-image: url(img/boni.png); }
+.coop{ background-color: #F99001; background-image: url(img/coop-compact.png);}
+.coopcompact{ background-color: #F99001; background-image: url(img/coopcompact.png);}
+.deen{ background-color: #e2001a; background-image: url(img/deen.png); }
+.dekamarkt{ background-color: #e6212c; background-image: url(img/dekamarkt.png); }
+.dirck-iii{ background-color: #f9e1c1; background-image: url(img/dirck-iii.png); }
+.dirk{ background-color: #ef2e31; background-image: url(img/dirk.png); }
+.emte{ background-color: #105d47; background-image: url(img/emte.png); }
+.gall-en-gall{ background-color: #52545a; background-image: url(img/gall-en-gall.png); }
+.hanos{ background-color: #520144; background-image: url(img/hanos.png); }
+.hoogvliet{ background-color: #00b4ee; background-image: url(img/hoogvliet.png); }
+.jan-linders{ background-color: #0a4096; background-image: url(img/jan-linders.png); }
+.jumbo {background-color: #fbc90b; background-image: url(img/jumbo.png);}
+.lidl{ background-color: #2250a9; background-image: url(img/lidl.png); }
+.makro{ background-color: #013e7d; background-image: url(img/makro.png); }
+.mcd{ background-color: #00408a; background-image: url(img/mcd.png); }
+.mitra{ background-color: #3a4036; background-image: url(img/mitra.png); }
+.nettorama{ background-color: #feed01; background-image: url(img/nettorama.png); }
+.plus {background-color: #BDBD00;background-image: url(img/plus.png);}
+.poiesz {background-color: #fedf9f;background-image: url(img/poiesz.png);}
+.sligro {background-color: #02513c;background-image: url(img/sligro.png);}
+.spar {background-color: #fe0000;background-image: url(img/spar.png);}
+.troefmarkt {background-color: #f57b2a;background-image: url(img/troefmarkt.png);}
+.vomar {background-color: #fed12f;background-image: url(img/vomar.png);}
